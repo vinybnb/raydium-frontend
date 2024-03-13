@@ -14,7 +14,7 @@ import useConnection, { SESSION_STORAGE_USER_SELECTED_RPC } from './useConnectio
 import useAppAdvancedSettings from '../common/useAppAdvancedSettings'
 
 const mockRPCConfig: Omit<Config, 'success'> = {
-  rpcs: [{ name: 'mainnet', url: 'https://api.metaplex.solana.com/', net: 'mainnet' }],
+  rpcs: [{ name: 'mainnet', url: 'https://solana.api.onfinality.io/public/', net: 'mainnet' }],
   devrpcs: [{ name: 'devnet', url: 'https://api.devnet.solana.com/', net: 'devnet' }],
   strategy: 'speed'
 }
@@ -81,7 +81,7 @@ export default function useConnectionInitialization() {
         //   batch: true,
         //   name: 'Triton'
         // }
-        const connection = new Connection('https://api.metaplex.solana.com/', 'confirmed') // TEMP for DEV
+        const connection = new Connection('https://solana.api.onfinality.io/public/', 'confirmed') // TEMP for DEV
 
         useConnection.setState((s) => ({
           availableEndPoints: unifyByKey([...(s.availableEndPoints ?? []), ...data.rpcs], (i) => i.url),

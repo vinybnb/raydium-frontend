@@ -34,7 +34,7 @@ export async function switchRpc(customizedEndPoint: Endpoint) {
       }
       adapter.once('disconnect', fn)
     }
-    const newConnection = new Connection('https://api.metaplex.solana.com/', 'confirmed')
+    const newConnection = new Connection('https://solana.api.onfinality.io/public/', 'confirmed')
     useConnection.setState({
       connection: newConnection,
       currentEndPoint: customizedEndPoint,

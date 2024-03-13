@@ -58,7 +58,7 @@ export default function usePoolsInfoLoader() {
       )
         return
 
-      const connection = new Connection('https://api.metaplex.solana.com/', 'confirmed')
+      const connection = new Connection('https://solana.api.onfinality.io/public/', 'confirmed')
       // const poolsKeys = await Liquidity.fetchAllPoolKeysBase(
       //   connection,
       //   new PublicKey('6JoLA82ywfdUEQnwkeerETwW9tCCjbqinPHUEahzqrpM'),

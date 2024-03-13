@@ -64,7 +64,7 @@ export const useConnection = create<ConnectionStore>((set, get) => ({
 
   availableEndPoints: [
     {
-      url: 'https://api.metaplex.solana.com/',
+      url: 'https://solana.api.onfinality.io/public/',
       weight: 99,
       batch: true,
       name: 'Triton'
