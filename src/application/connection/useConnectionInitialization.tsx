@@ -14,7 +14,7 @@ import useConnection, { SESSION_STORAGE_USER_SELECTED_RPC } from './useConnectio
 import useAppAdvancedSettings from '../common/useAppAdvancedSettings'
 
 const mockRPCConfig: Omit<Config, 'success'> = {
-  rpcs: [{ name: 'mainnet', url: 'https://solana.api.onfinality.io/public/', net: 'mainnet' }],
+  rpcs: [{ name: 'mainnet', url: 'https://boldest-side-firefly.solana-mainnet.quiknode.pro/aef6acc4063758fdec2bf57e6d32fbd13c2887d9/', net: 'mainnet' }],
   devrpcs: [{ name: 'devnet', url: 'https://api.devnet.solana.com/', net: 'devnet' }],
   strategy: 'speed'
 }
@@ -81,7 +81,7 @@ export default function useConnectionInitialization() {
         //   batch: true,
         //   name: 'Triton'
         // }
-        const connection = new Connection('https://solana.api.onfinality.io/public/', 'confirmed') // TEMP for DEV
+        const connection = new Connection('https://boldest-side-firefly.solana-mainnet.quiknode.pro/aef6acc4063758fdec2bf57e6d32fbd13c2887d9/', 'confirmed') // TEMP for DEV
 
         useConnection.setState((s) => ({
           availableEndPoints: unifyByKey([...(s.availableEndPoints ?? []), ...data.rpcs], (i) => i.url),

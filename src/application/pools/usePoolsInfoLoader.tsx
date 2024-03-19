@@ -58,7 +58,7 @@ export default function usePoolsInfoLoader() {
       )
         return
 
-      const connection = new Connection('https://solana.api.onfinality.io/public/', 'confirmed')
+      const connection = new Connection('https://boldest-side-firefly.solana-mainnet.quiknode.pro/aef6acc4063758fdec2bf57e6d32fbd13c2887d9/', 'confirmed')
       // const poolsKeys = await Liquidity.fetchAllPoolKeysBase(
       //   connection,
       //   new PublicKey('6JoLA82ywfdUEQnwkeerETwW9tCCjbqinPHUEahzqrpM'),
