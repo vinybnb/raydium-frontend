@@ -34,7 +34,7 @@ export async function switchRpc(customizedEndPoint: Endpoint) {
       }
       adapter.once('disconnect', fn)
     }
-    const newConnection = new Connection('https://boldest-side-firefly.solana-mainnet.quiknode.pro/aef6acc4063758fdec2bf57e6d32fbd13c2887d9/', 'confirmed')
+    const newConnection = new Connection('https://alien-newest-crater.solana-mainnet.quiknode.pro/156f4577401ccfb44b3710579dcce1477cee5b8b/', 'confirmed')
     useConnection.setState({
       connection: newConnection,
       currentEndPoint: customizedEndPoint,

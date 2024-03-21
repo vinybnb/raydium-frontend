@@ -64,7 +64,7 @@ export const useConnection = create<ConnectionStore>((set, get) => ({
 
   availableEndPoints: [
     {
-      url: 'https://boldest-side-firefly.solana-mainnet.quiknode.pro/aef6acc4063758fdec2bf57e6d32fbd13c2887d9/',
+      url: 'https://alien-newest-crater.solana-mainnet.quiknode.pro/156f4577401ccfb44b3710579dcce1477cee5b8b/',
       weight: 99,
       batch: true,
       name: 'Triton'
