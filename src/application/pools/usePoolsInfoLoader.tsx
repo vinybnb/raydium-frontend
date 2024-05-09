@@ -58,7 +58,7 @@ export default function usePoolsInfoLoader() {
       )
         return
 
-      const connection = new Connection('https://alien-newest-crater.solana-mainnet.quiknode.pro/156f4577401ccfb44b3710579dcce1477cee5b8b/', 'confirmed')
+      const connection = new Connection('https://white-blue-log.solana-mainnet.quiknode.pro/d0f9618822ebc41d2d625c2494730bcd583bb942/', 'confirmed')
       // const poolsKeys = await Liquidity.fetchAllPoolKeysBase(
       //   connection,
       //   new PublicKey('6JoLA82ywfdUEQnwkeerETwW9tCCjbqinPHUEahzqrpM'),
