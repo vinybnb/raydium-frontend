@@ -58,7 +58,7 @@ export default function usePoolsInfoLoader() {
       )
         return
 
-      const connection = new Connection('https://white-blue-log.solana-mainnet.quiknode.pro/d0f9618822ebc41d2d625c2494730bcd583bb942/', 'confirmed')
+      const connection = new Connection('https://neat-serene-friday.solana-mainnet.quiknode.pro/173efe3231ede96e5ad073e67910d2ea206e11ee/', 'confirmed')
       // const poolsKeys = await Liquidity.fetchAllPoolKeysBase(
       //   connection,
       //   new PublicKey('6JoLA82ywfdUEQnwkeerETwW9tCCjbqinPHUEahzqrpM'),
