@@ -14,7 +14,7 @@ import useConnection, { SESSION_STORAGE_USER_SELECTED_RPC } from './useConnectio
 import useAppAdvancedSettings from '../common/useAppAdvancedSettings'
 
 const mockRPCConfig: Omit<Config, 'success'> = {
-  rpcs: [{ name: 'mainnet', url: 'https://neat-serene-friday.solana-mainnet.quiknode.pro/173efe3231ede96e5ad073e67910d2ea206e11ee/', net: 'mainnet' }],
+  rpcs: [{ name: 'mainnet', url: 'https://black-purple-moon.solana-mainnet.quiknode.pro/a067fcb971842a3bbedb58fccc9fc8702fd8abaf/', net: 'mainnet' }],
   devrpcs: [{ name: 'devnet', url: 'https://api.devnet.solana.com/', net: 'devnet' }],
   strategy: 'speed'
 }
@@ -81,7 +81,7 @@ export default function useConnectionInitialization() {
         //   batch: true,
         //   name: 'Triton'
         // }
-        const connection = new Connection('https://neat-serene-friday.solana-mainnet.quiknode.pro/173efe3231ede96e5ad073e67910d2ea206e11ee/', 'confirmed') // TEMP for DEV
+        const connection = new Connection('https://black-purple-moon.solana-mainnet.quiknode.pro/a067fcb971842a3bbedb58fccc9fc8702fd8abaf/', 'confirmed') // TEMP for DEV
 
         useConnection.setState((s) => ({
           availableEndPoints: unifyByKey([...(s.availableEndPoints ?? []), ...data.rpcs], (i) => i.url),
